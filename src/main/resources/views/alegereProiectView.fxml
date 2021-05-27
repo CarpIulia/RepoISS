@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlegereProiectController">
+   <children>
+      <ListView fx:id="listViewProiecte" layoutX="14.0" layoutY="51.0" onMouseClicked="#handleProiectAles" prefHeight="288.0" prefWidth="570.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="68.0" text="Proiecte">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="520.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleDelogare" text="Delogare" />
+      <CheckBox fx:id="optionAdaugare" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="79.0" text="Adaugare" />
+      <CheckBox fx:id="optionValidare" layoutX="14.0" layoutY="369.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="79.0" text="Validare" />
+   </children>
+</AnchorPane>

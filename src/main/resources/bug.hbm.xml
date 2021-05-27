@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domain.Bug" table="Buguri">
+        <id name="id" column="id">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="descriere"
+                column="descriere"/>
+        <property
+                name="status"
+                column="status"/>
+        <property
+                name="gradUrgenta"
+                column="grad_urgenta"/>
+        <property
+                name="numeProgramator"
+                column="nume_programator"/>
+        <many-to-one
+                name="proiect"
+                cascade="all"
+                column="proiect"/>
+    </class>
+</hibernate-mapping>

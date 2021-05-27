@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdaugareBugController">
+   <children>
+      <TableView fx:id="tableViewBuguri" layoutX="14.0" layoutY="48.0" prefHeight="341.0" prefWidth="254.0">
+        <columns>
+          <TableColumn fx:id="columnDescriere" prefWidth="88.20001411437988" text="Descriere" />
+          <TableColumn fx:id="columnGradUrgenta" prefWidth="81.39998626708984" text="Grad urgenta" />
+            <TableColumn fx:id="columnStatus" prefWidth="83.79998779296875" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" text="Buguri">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAreaDescriere" layoutX="337.0" layoutY="79.0" prefHeight="98.0" prefWidth="201.0" />
+      <ComboBox fx:id="comboBoxGradUrgenta" layoutX="363.0" layoutY="239.0" prefWidth="150.0" />
+      <Label layoutX="411.0" layoutY="48.0" text="Descriere">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="210.0" text="Grad de urgenta" />
+      <Button layoutX="404.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleAdaugare" text="Adaugare" />
+      <Button layoutX="551.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleInapoi" text="&lt;--">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

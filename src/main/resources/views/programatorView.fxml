@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProgramatorWindowController">
+    <children>
+        <TableView fx:id="tableViewBuguri" layoutX="14.0" layoutY="48.0" onMouseClicked="#handleBugClicked" prefHeight="342.0" prefWidth="286.0">
+            <columns>
+                <TableColumn fx:id="columnDescriere" prefWidth="123.80000877380371" text="Descriere" />
+                <TableColumn fx:id="columnGradUrgenta" prefWidth="87.39999389648438" text="Grad urgenta" />
+                <TableColumn fx:id="columnStatus" prefWidth="75.19998168945312" text="Status" />
+            </columns>
+        </TableView>
+        <Label layoutX="14.0" layoutY="14.0" text="Buguri">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Pane layoutX="286.0" layoutY="29.0" prefHeight="342.0" prefWidth="302.0">
+         <children>
+            <Button fx:id="buttonIncepe" layoutX="97.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleIncepeRezolvarea" text="Incepe rezolvarea" />
+            <Button fx:id="buttonAbandoneaza" layoutX="78.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleAbandoneazaRezolvarea" text="Abandoneaza rezolvarea" />
+            <Label layoutX="59.0" layoutY="28.0" prefHeight="19.0" prefWidth="44.0" text="Status">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Label layoutX="42.0" layoutY="65.0" text="Grad urgenta">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="102.0" text="Programator">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldStatus" layoutX="138.0" layoutY="25.0" />
+            <TextField fx:id="textFieldGradUrgenta" layoutX="137.0" layoutY="62.0" />
+            <TextField fx:id="textFieldProgramator" layoutX="137.0" layoutY="99.0" />
+            <TextArea fx:id="textAreaDescriere" layoutX="138.0" layoutY="135.0" prefHeight="57.0" prefWidth="146.0" />
+            <Label layoutX="53.0" layoutY="154.0" text="Descriere">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonFinalizeaza" layoutX="86.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleFinalizeazaRezolvarea" text="Finalizeaza rezolvarea" />
+         </children>
+      </Pane>
+      <Button layoutX="555.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleInapoi" prefHeight="26.0" prefWidth="34.0" text="&lt;--">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+    </children>
+
+</AnchorPane>
